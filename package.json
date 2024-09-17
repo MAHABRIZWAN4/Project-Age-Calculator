@@ -1,0 +1,17 @@
+{
+  "name": "project-age-calculator",
+  "version": "1.0.0",
+  "description": "A responsive age calculator app built with TypeScript, HTML, and CSS. The app provides instant age calculation with a clean, user-friendly interface and adapts seamlessly to all devices.",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"(npx parcel ./src/index.html) & npx parcel watch ./src/index.htmll"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}

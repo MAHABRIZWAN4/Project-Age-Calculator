@@ -1,0 +1,149 @@
+                    /* ************************** For Body ******************************** */
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    box-sizing: border-box;
+} 
+
+                    /* ************************** Heading ******************************** */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 1rem;
+}
+.calculator{
+    width: 100%; 
+    max-width: 60rem; 
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 6rem;
+    /* 1rem = 10px
+       60 * 10 = 600px
+    60 / 10 =  6 rem */
+}
+
+.calculator h1 span {
+    color: #ffff76;
+} 
+                          /* ****************** For Date Box And Calculate Button *********************** */
+.input-box{
+    margin: 4rem 0;
+    padding: 3.5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+                          /* ****************** .index-box(input) *********************** */
+ .input-box input{
+    flex: 1;
+    margin-right: 2rem;
+    padding: 1.4rem 2rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    position: relative;
+} 
+
+                          /* ****************** .index-box(button) *********************** */
+.input-box button{
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+} 
+
+
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 3rem;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    color: #ffff76;
+}
+
+
+                        /* ********** Media Queries for Responsive Design ********** */
+@media (max-width: 1280px) {
+    html {
+        font-size: 56.25%; /* 1rem = 9px */
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 50%; /* 1rem = 8px */
+    }
+    .calculator h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 43.75%; /* 1rem = 7px */
+    }
+    .calculator h1 {
+        font-size: 4rem;
+    }
+}
+                    
+@media (max-width: 540px) {
+    html {
+        font-size: 37.5%; /* 1rem = 6px */
+    }
+    .calculator h1 {
+        font-size: 3.5rem;
+    }
+    .input-box input, .input-box button {
+        font-size: 1.6rem;
+        padding: 1.2rem 2rem;
+    }
+}
+
+@media (max-width: 414px) {
+    html {
+        font-size: 31.25%; /* 1rem = 5px */
+    }
+    .calculator h1 {
+        font-size: 3rem;
+    }
+    .input-box {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 25%; /* 1rem = 4px */
+    }
+    .calculator h1 {
+        font-size: 2.5rem;
+    }
+    .input-box input, .input-box button {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+}
+}
